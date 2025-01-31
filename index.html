@@ -12,22 +12,91 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/01b0fb89a9.js" crossorigin="anonymous"></script>
     <style>
-        .adlam-display-regular {
+        .font-adlam{
         font-family: "ADLaM Display", serif;
         }
         .font-sora{
         font-family: "Sora", serif;
         }
     </style>
+    <!-- for custom color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'pet-primary': '#FFF9F4;',
+                'btn-primary': '#FFDC26;',
+              },
+            },
+          },
+        }
+      </script>
+
 </head>
 <body>
     <!-- header section style -->
-    <header>
+    <header class=" font-sora">
+        <nav class="bg-pet-primary container mx-auto px-4">
+            <div class="navbar justify-between md:justify-evenly">
+                <div class="">
+                <a class="text-xl flex items-center">
+                    <img class="w-8" src="c1-assets/logo-header.png" alt="">
+                    <h4 class="hidden md:inline">Browse<span class="text-btn-primary">4</span>Pets</h4>
+                </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li class="font-bold"><a>Find a pet</a></li>
+                    <li class="font-bold"><a>Breeds</a></li>
+                    <li class="font-bold"><a>Contact us</a></li>
+                  </ul>
+                </div>
+                <div class="hidden md:inline space-x-5">
+                    <i class="fa-solid fa-bell"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <button class="btn  bg-transparent text-black border-btn-primary">Login</button>
+                    <button class="btn  bg-btn-primary border-none text-black">Register</button>
+                </div>
+              <div class="md:hidden">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+        </nav>
 
+        <!-- banner section start -->
+    <section class="container mx-auto mt-8">
+        <div class="hero  ">
+            <div class="hero-content flex-col md:flex-row">
+
+            <div class="space-y-5">
+                    <h1 class="text-3xl font-bold font-adlam">Pamper Your Pet,<br> Because They Deserve  <br> the Bes</h1>
+                    <p class="font-sora">
+                        Pampering your pet means providing love, comfort, treats, toys, grooming, and quality time daily.
+                    </p>
+                    <button class="btn  bg-btn-primary border-none text-black font-sora">Find a pet</button>
+            </div>    
+            <div>
+                <img
+                src="c1-assets/cat-big.png"
+                class="relative -left-4  md:-left-10 " />
+            </div>
+             
+            </div>
+          </div>
+    </section>
+    <!-- banner section start -->
     </header>
     <!-- header section end -->
-    <main></main>
+    
+    
+
+    <main>
+        
+    </main>
     <footer></footer>
 </body>
 </html>
