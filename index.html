@@ -32,6 +32,9 @@
                 'pet-primary': '#FFF9F4;',
                 'btn-primary': '#FFDC26;',
                 'card-primary': '#F9DF8A',
+                'card-new': '#F8CCFB',
+                'card-new2': '#ACD2FD',
+                'card-text': '#FFDC26',
               },
             },
           },
@@ -315,7 +318,79 @@
         </section>
         <!-- pet products section end -->
         
+        <!-- offer section start -->
+        <section class="">
+          <!-- big cards container -->
+          <div class="grid grid-cols-1 p-5 md:p-0 md:grid-cols-2   md:ml-40 md:space-x-32">
+            <div class="card  mb-20 md:mb-0 shadow-xl  md:w-[784px] md:h-[402px] bg-gradient-to-r from-card-new to-card-new2 ">
+              <div class="flex items-center justify-evenly  space-y-5  mt-5 ml-5">
+                <div class="font-adlam space-y-5">
+                <p class="font-sora hidden md:inline">Under price</p>
+                <h4 class="text-3xl">Pet Grooming Unit</h4>
+                <p class="text-white hidden md:inline">(Easy Hair Removal)</p>
+                <h3 class="text-5xl text-white md:text-black">$7.99</h3>
+                </div>
+                
+                <div class="">
+                  <img class=" w-80"
+                  src="c1-assets/cute-dog-mid.png"
+                  alt="Shoes" />
+                </div>
+            </div>
+          </div>
+
+          <div class="card  mb-20 md:mb-0 shadow-xl md:w-96 md:h-[402px] bg-card-primary bg-gradient-to-r from-white to-card-primary ">
+            <div class="flex items-left flex-col space-y-5  mt-5 ml-5">
+              <h2 class="card-title mt-8 text-2xl font-adlam">T-Shirts For Dogs</h2>
+              <h3 class="font-sora text-card-text text-4xl">$7.99</h3>
+              
+            </div>
+              <div class="relative -top-14 ml-44 md:left-36 md:-top-28 md:ml-0">
+                <img class=" h-72"
+                src="c1-assets/cute-pet-small.png"
+                alt="Shoes" />
+              </div>
+          </div>
+
+        </div>
+        </section>
+        <!-- offer section end -->
     </main>
-    <footer></footer>
+
+    <footer class="bg-card-primary font-sora">
+      <footer class="footer flex justify-evenly flex-col md:flex-row md:items-end text-base-content p-10 h-[500px]">
+        <nav>
+          <div class="flex items-center space-x-4">
+            <img class="" src="c1-assets/logo-footer.png" alt="">
+          <p class="">Browse pets</p>
+          </div>
+          <p>Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends</p>
+        </nav>
+        <nav class="mt-5">
+          
+          <a class="link link-hover">Find a pet</a>
+          <a class="link link-hover">Contact us</a>
+          <a class="link link-hover">Breeds</a>
+          
+        </nav>
+        <nav class="mt-10">
+          <h6 class="footer-title">Follow us</h6>
+          <div class="grid grid-flow-col gap-4">
+            <a>
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a>
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a>
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a>
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </nav>
+      </footer>
+    </footer>
 </body>
 </html>
