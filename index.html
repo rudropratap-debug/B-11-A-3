@@ -21,6 +21,30 @@
         .font-sora{
         font-family: "Sora", serif;
         }
+        .cat{
+    height: 297px; 
+    width: 507px;
+    position: fixed;
+    animation: walk 25s linear infinite;
+}
+
+@keyframes walk {
+  0%, 100% { 
+    left: 0;    
+    transform: translatex(-50%) scalex(1); 
+  }
+   49% { 
+    left: 100%; 
+    transform: translatex(-50%) scalex(1); 
+  }
+    50% { 
+     left: 100%; 
+     transform: translatex(-50%) scalex(-1);  
+  }
+     99% { 
+      left: 0;   
+      transform: translatex(-50%) scalex(-1);      }
+}
     </style>
     <!-- for custom color -->
     <script>
@@ -45,7 +69,7 @@
 <body>
     <!-- header section style -->
     <header class=" font-sora">
-        <nav class="bg-pet-primary container mx-auto px-4">
+        <nav class="bg-pet-primary border-b border-black md:border-none container mx-auto px-4">
             <div class="navbar justify-between md:justify-evenly">
                 <div class="">
                 <a class="text-xl flex items-center">
@@ -73,6 +97,9 @@
 
         <!-- banner section start -->
     <section class="container mx-auto mt-8">
+      <div class="animate-bounce flex justify-center">
+        <img src="c1-assets/bird-cartoon.png" alt="">
+      </div>
         <div class="hero  ">
             <div class="hero-content flex-col md:flex-row">
 
@@ -93,6 +120,7 @@
           </div>
     </section>
     <!-- banner section start -->
+    
     </header>
     <!-- header section end -->
     
@@ -211,8 +239,35 @@
         </section>
         <!-- categories section end -->
 
+        <!-- Extra section -->
+        
+        <section class="mt-40 font-adlam">
+          <h3 class="text-4xl mb-5 ml-4">Frequently asked questions</h3>
+          <div class="collapse collapse-arrow bg-pet-primary">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium ">What is the most adorable cat breed ?</div>
+            <div class="collapse-content">
+              <p class="font-sora">dorableness is subjective, but some of the most adorable cat breeds <br> based on their looks, personality, and <br> fluffiness include:  Scottish Fold , Ragdoll ,British Shorthair , Persian</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-pet-primary">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">Vacination for pets</div>
+            <div class="collapse-content">
+              <p class="font-sora">Vaccinating pets is crucial for their health, longevity, and protection against serious diseases. <br> Vaccines help prevent infections, reduce the risk of <br> spreading diseases, and contribute to overall pet well-being.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-pet-primary">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">Most friendly pet ?</div>
+            <div class="collapse-content">
+              <p class="font-sora">If you're looking for a loving, <br> social, and affectionate pet,<br> here are some of the friendliest options: Dogs , Cats , Rabbits , Parrots</p>
+            </div>
+          </div>
+        </section>
+
         <!-- pet products section -->
-        <section class="container mx-auto my-64">
+        <section class="container mx-auto my-64 bg-pet-primary">
           <h3 class="font-adlam text-3xl md:text-4xl mb-8  lg:ml-36">Trending pet products</h3>
           
           <div class="grid grid-cols-1  md:grid-cols-2 px-6 md:px-40">
@@ -319,7 +374,7 @@
         <!-- pet products section end -->
         
         <!-- offer section start -->
-        <section class="">
+        <section class="bg-">
           <!-- big cards container -->
           <div class="grid grid-cols-1 p-5 md:p-0 md:grid-cols-2   md:ml-40 md:space-x-32">
             <div class="card  mb-20 md:mb-0 shadow-xl  md:w-[784px] md:h-[402px] bg-gradient-to-r from-card-new to-card-new2 ">
@@ -355,25 +410,47 @@
         </div>
         </section>
         <!-- offer section end -->
+
+        <!-- challenge section start -->
+        <section class="relative top-96 text-left  shadow-lg bg-white">
+          <div class="hero  ">
+            <div class="hero-content flex-col ml-0 lg:flex-row space-x-15">
+              <img
+                src="c1-assets/cute-pet-mid.png"
+                class="" />
+              <div class="space-y-10">
+                <h1 class="text-5xl font-bold">Get Pawsome News!</h1>
+                <p class="py-6">
+                  Exclusive training tips, ticks, product deals and more.
+                </p>
+                <input type="text"  placeholder="Enter Your Email" class="input  w-full max-w-xs border-none shadow-lg" />
+                <div class="flex justify-center md:justify-start">
+                  <button class="btn  bg-btn-primary  border-none text-black font-sora">Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- challenge section end -->
     </main>
 
-    <footer class="bg-card-primary font-sora">
-      <footer class="footer flex justify-evenly flex-col md:flex-row md:items-end text-base-content p-10 h-[500px]">
-        <nav>
+    <footer class="bg-card-primary font-sora ">
+      <footer class="footer flex  justify-end md:justify-evenly  flex-col  mt-52 md:flex-row md:items-end text-base-content p-10 h-[600px]">
+        <nav class="">
           <div class="flex items-center space-x-4">
             <img class="" src="c1-assets/logo-footer.png" alt="">
           <p class="">Browse pets</p>
           </div>
           <p>Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends</p>
         </nav>
-        <nav class="mt-5">
+        <nav class="">
           
           <a class="link link-hover">Find a pet</a>
           <a class="link link-hover">Contact us</a>
           <a class="link link-hover">Breeds</a>
           
         </nav>
-        <nav class="mt-10">
+        <nav class="">
           <h6 class="footer-title">Follow us</h6>
           <div class="grid grid-flow-col gap-4">
             <a>
